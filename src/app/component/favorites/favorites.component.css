@@ -1,0 +1,84 @@
+/*no favorites*/
+.no-favorites-div{
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #a2a6ab;
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.no-favorites-span{
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/*has app-favorites*/
+
+.favorites-div{
+  margin: auto;
+}
+
+.city-span{
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.temperature-span{
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.sun-type-span{
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+  position: relative;
+  top: 50px;
+}
+
+.weather-div{
+  height: 250px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #a2a6ab;
+}
+
+.temperature-celsius{
+  margin: 10px;
+  margin-bottom: 20px;
+  background: url("../../../assets/celsius-degrees-symbol-of-temperature.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.weather-container{
+  background-image: url("../../../assets/pero-kalimero-9BJRGlqoIUk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 200px;
+}
+
+.delete-from-favorites-button{
+  position: relative;
+  left: 20px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+:host ::ng-deep .ng-star-inserted{
+  margin: 10px;
+}
+
+.transparent-button{
+  border-color: transparent;
+  background-color: transparent;
+  width: 100%;
+  height: 70%;
+}

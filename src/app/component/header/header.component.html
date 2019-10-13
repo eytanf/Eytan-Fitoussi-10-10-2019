@@ -1,0 +1,11 @@
+<div class="header container">
+  <div class="row">
+    <div class="col-2">
+      <label class="img"></label>
+    </div>
+    <div class="col-10">
+      <button (click)="navigateToFavorites()" class="favorite-btn float-right" [ngClass]="[favoriteStyle]">Favorites</button>
+      <button (click)="navigateToHome()" class="home-btn float-right" [ngClass]="[homeStyle]">Home</button>
+    </div>
+  </div>
+</div>

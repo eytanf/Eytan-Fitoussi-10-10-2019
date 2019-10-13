@@ -1,0 +1,26 @@
+<!--no favorites-->
+<div *ngIf="favorites.length === 0" class="no-favorites-div weather-container">
+  <span class="no-favorites-span">Please go back to Home page and select a favorite by clicking the heart logo</span>
+</div>
+
+<!--favorites-->
+<div *ngIf="favorites.length !== 0" class="favorites-div container">
+  <div class="row">
+    <div *ngFor="let option of favorites">
+      <div class="col-md-12 weather-div weather-container">
+        <button class="delete-from-favorites-button float-right" (click)="deleteFromFavorites(option.city)">
+          <mat-icon>clear</mat-icon>
+        </button>
+        <button class="transparent-button" (click)="moveToHome(option.city)">
+          <span class="city-span">{{option.city}}</span>
+          <br>
+          <span class="temperature-span">{{option.temperature}}</span>
+          <img class="temperature-celsius">
+          <br>
+          <span class="sun-type-span">{{option.sunType}}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
